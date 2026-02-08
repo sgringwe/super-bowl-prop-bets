@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Scores</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 24px;
+        color: #1b1b1b;
+      }
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .note {
+        color: #555;
+      }
+      .error {
+        color: #b00020;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 16px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body data-page="scores">
+    <div class="container">
+      <h1>Live Scores</h1>
+      <p class="note">Scores update every minute based on the master sheet.</p>
+      <div id="scores-root"></div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>

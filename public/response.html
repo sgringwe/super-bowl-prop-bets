@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Prop Bet Responses</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 24px;
+        color: #1b1b1b;
+      }
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .status {
+        font-weight: bold;
+        margin-left: 8px;
+      }
+      .correct {
+        color: #1b5e20;
+      }
+      .wrong {
+        color: #b00020;
+      }
+      .pending {
+        color: #555;
+      }
+      .error {
+        color: #b00020;
+      }
+      .top-link {
+        float: right;
+        font-size: 14px;
+        margin-top: 4px;
+      }
+      ul {
+        padding-left: 18px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body data-page="response">
+    <div class="container">
+      <a class="top-link" href="/scores.html">See all scores</a>
+      <h1>Your Responses</h1>
+      <p id="entry-name"></p>
+      <div id="response-root"></div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
